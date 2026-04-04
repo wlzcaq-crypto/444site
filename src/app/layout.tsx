@@ -1,42 +1,40 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import "./globals.css";
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin", "cyrillic"],
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "ФРЕЙМВОРК 444 | Архитектура Идеального Сайта",
-  description:
-    "Увеличение производства в 10 раз за счет ИИ-слоя и профессиональной инфраструктуры. AI-driven разработка, высоконагруженные системы, автоматические воронки продаж.",
-  keywords: [
-    "фреймворк 444",
-    "AI разработка",
-    "веб-разработка",
-    "Next.js",
-    "ИИ-агенты",
-  ],
+  title: "MiroBoard | Digital Whiteboard",
+  description: "A collaborative digital whiteboard for visual thinking and diagramming.",
+  keywords: ["miro", "whiteboard", "diagram", "collaboration", "canvas"],
   openGraph: {
-    title: "ФРЕЙМВОРК 444 | Архитектура Идеального Сайта",
-    description:
-      "Увеличение производства в 10 раз за счет ИИ-слоя и профессиональной инфраструктуры.",
+    title: "MiroBoard | Digital Whiteboard",
+    description: "A collaborative digital whiteboard for visual thinking and diagramming.",
     type: "website",
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="ru" className={`${jetbrainsMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
-        <div className="scanline-overlay" />
-        {children}
+    <html lang={locale} className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-sans">
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

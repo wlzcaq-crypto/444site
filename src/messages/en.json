@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "search": "Search",
+    "loading": "Loading..."
+  },
+  "dashboard": {
+    "title": "My Workspace",
+    "myBoards": "My Boards",
+    "createBoard": "Create New Board",
+    "recentBoards": "Recent",
+    "starredBoards": "Starred",
+    "trash": "Trash",
+    "noBoards": "No boards yet. Create your first board!",
+    "noStarred": "No starred boards yet.",
+    "noTrash": "Trash is empty.",
+    "boardCreated": "Board created on",
+    "deleteConfirm": "Move to trash?",
+    "restoreBoard": "Restore",
+    "deletePermanently": "Delete permanently",
+    "star": "Star",
+    "unstar": "Unstar"
+  },
+  "canvas": {
+    "backToDashboard": "Back to Dashboard",
+    "toolbar": "Toolbar",
+    "addRectangle": "Rectangle",
+    "addCircle": "Circle",
+    "addText": "Text",
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "fitView": "Fit View",
+    "dragToAdd": "Click to add to canvas",
+    "untitledBoard": "Untitled Board"
+  },
+  "language": {
+    "switchLanguage": "Language",
+    "en": "English",
+    "ru": "Russian",
+    "es": "Spanish",
+    "fr": "French",
+    "de": "German",
+    "zh": "Chinese",
+    "ja": "Japanese",
+    "pt": "Portuguese",
+    "it": "Italian",
+    "ko": "Korean"
+  },
+  "user": {
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Log Out",
+    "welcome": "Welcome back"
+  }
+}

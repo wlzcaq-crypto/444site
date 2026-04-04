@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "戻る",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "search": "検索",
+    "loading": "読み込み中..."
+  },
+  "dashboard": {
+    "title": "マイワークスペース",
+    "myBoards": "マイボード",
+    "createBoard": "新しいボードを作成",
+    "recentBoards": "最近",
+    "starredBoards": "スター付き",
+    "trash": "ゴミ箱",
+    "noBoards": "まだボードがありません。最初のボードを作成しましょう！",
+    "noStarred": "スター付きのボードはありません。",
+    "noTrash": "ゴミ箱は空です。",
+    "boardCreated": "ボード作成日",
+    "deleteConfirm": "ゴミ箱に移動しますか？",
+    "restoreBoard": "復元",
+    "deletePermanently": "完全に削除",
+    "star": "スターを付ける",
+    "unstar": "スターを外す"
+  },
+  "canvas": {
+    "backToDashboard": "ダッシュボードに戻る",
+    "toolbar": "ツールバー",
+    "addRectangle": "四角形",
+    "addCircle": "円形",
+    "addText": "テキスト",
+    "zoomIn": "拡大",
+    "zoomOut": "縮小",
+    "fitView": "全体表示",
+    "dragToAdd": "クリックして追加",
+    "untitledBoard": "無題のボード"
+  },
+  "language": {
+    "switchLanguage": "言語",
+    "en": "英語",
+    "ru": "ロシア語",
+    "es": "スペイン語",
+    "fr": "フランス語",
+    "de": "ドイツ語",
+    "zh": "中国語",
+    "ja": "日本語",
+    "pt": "ポルトガル語",
+    "it": "イタリア語",
+    "ko": "韓国語"
+  },
+  "user": {
+    "profile": "プロフィール",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "welcome": "おかえりなさい"
+  }
+}

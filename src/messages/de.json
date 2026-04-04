@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "Zurück",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "search": "Suchen",
+    "loading": "Laden..."
+  },
+  "dashboard": {
+    "title": "Mein Arbeitsbereich",
+    "myBoards": "Meine Boards",
+    "createBoard": "Neues Board Erstellen",
+    "recentBoards": "Zuletzt",
+    "starredBoards": "Markiert",
+    "trash": "Papierkorb",
+    "noBoards": "Noch keine Boards. Erstellen Sie Ihr erstes Board!",
+    "noStarred": "Keine markierten Boards.",
+    "noTrash": "Papierkorb ist leer.",
+    "boardCreated": "Board erstellt am",
+    "deleteConfirm": "In den Papierkorb verschieben?",
+    "restoreBoard": "Wiederherstellen",
+    "deletePermanently": "Endgültig löschen",
+    "star": "Markieren",
+    "unstar": "Markierung entfernen"
+  },
+  "canvas": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "toolbar": "Werkzeugleiste",
+    "addRectangle": "Rechteck",
+    "addCircle": "Kreis",
+    "addText": "Text",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern",
+    "fitView": "Ansicht Anpassen",
+    "dragToAdd": "Klicken zum Hinzufügen",
+    "untitledBoard": "Unbenanntes Board"
+  },
+  "language": {
+    "switchLanguage": "Sprache",
+    "en": "Englisch",
+    "ru": "Russisch",
+    "es": "Spanisch",
+    "fr": "Französisch",
+    "de": "Deutsch",
+    "zh": "Chinesisch",
+    "ja": "Japanisch",
+    "pt": "Portugiesisch",
+    "it": "Italienisch",
+    "ko": "Koreanisch"
+  },
+  "user": {
+    "profile": "Profil",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "welcome": "Willkommen zurück"
+  }
+}

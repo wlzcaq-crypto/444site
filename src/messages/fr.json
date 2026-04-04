@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "Retour",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "search": "Rechercher",
+    "loading": "Chargement..."
+  },
+  "dashboard": {
+    "title": "Mon Espace de Travail",
+    "myBoards": "Mes Tableaux",
+    "createBoard": "Créer un Nouveau Tableau",
+    "recentBoards": "Récents",
+    "starredBoards": "Favoris",
+    "trash": "Corbeille",
+    "noBoards": "Aucun tableau pour le moment. Créez votre premier tableau !",
+    "noStarred": "Aucun tableau favori.",
+    "noTrash": "La corbeille est vide.",
+    "boardCreated": "Tableau créé le",
+    "deleteConfirm": "Déplacer vers la corbeille ?",
+    "restoreBoard": "Restaurer",
+    "deletePermanently": "Supprimer définitivement",
+    "star": "Ajouter aux favoris",
+    "unstar": "Retirer des favoris"
+  },
+  "canvas": {
+    "backToDashboard": "Retour au Tableau de Bord",
+    "toolbar": "Barre d'outils",
+    "addRectangle": "Rectangle",
+    "addCircle": "Cercle",
+    "addText": "Texte",
+    "zoomIn": "Zoom Avant",
+    "zoomOut": "Zoom Arrière",
+    "fitView": "Ajuster la Vue",
+    "dragToAdd": "Cliquez pour ajouter",
+    "untitledBoard": "Tableau sans titre"
+  },
+  "language": {
+    "switchLanguage": "Langue",
+    "en": "Anglais",
+    "ru": "Russe",
+    "es": "Espagnol",
+    "fr": "Français",
+    "de": "Allemand",
+    "zh": "Chinois",
+    "ja": "Japonais",
+    "pt": "Portugais",
+    "it": "Italien",
+    "ko": "Coréen"
+  },
+  "user": {
+    "profile": "Profil",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "welcome": "Bienvenue"
+  }
+}
