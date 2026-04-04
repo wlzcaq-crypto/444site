@@ -40,10 +40,10 @@ function BoardCard({ board }: { board: Board }) {
   });
 
   return (
-    <div className="group relative bg-white rounded-2xl border border-slate-200 hover:border-indigo-300 hover:shadow-xl transition-all duration-300 overflow-hidden">
+    <div className="group relative bg-white rounded-2xl border border-slate-200 hover:border-indigo-300 hover:shadow-xl transition-all duration-300">
       <div
         onClick={handleOpenBoard}
-        className={`h-40 bg-gradient-to-br ${board.thumbnail} flex items-center justify-center cursor-pointer relative overflow-hidden`}
+        className={`h-40 bg-gradient-to-br ${board.thumbnail} flex items-center justify-center cursor-pointer relative overflow-hidden rounded-t-2xl`}
       >
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
         <div className="grid grid-cols-3 gap-2 p-6 opacity-30">
