@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #000000;
-  --color-foreground: #ffffff;
-  --font-sans: var(--font-geist-mono);
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
 /* ===== BASE STYLES ===== */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #333 #000;
+  scrollbar-color: #cbd5e1 #f1f5f9;
 }
 
 html {
@@ -18,136 +18,51 @@ html {
 }
 
 body {
-  background: #000000;
-  color: #ffffff;
-  font-family: var(--font-mono), 'Courier New', monospace;
+  background: #f8fafc;
+  color: #0f172a;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: #ffffff;
-  color: #000000;
-}
-
-/* ===== SCANLINE OVERLAY ===== */
-.scanline-overlay {
-  pointer-events: none;
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(255, 255, 255, 0.015) 2px,
-    rgba(255, 255, 255, 0.015) 4px
-  );
-}
-
-/* ===== GRID BACKGROUND ===== */
-.grid-bg {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-/* ===== GLITCH TEXT ===== */
-@keyframes glitch-1 {
-  0%, 100% { clip-path: inset(0 0 90% 0); transform: translate(-2px, 0); }
-  20% { clip-path: inset(30% 0 50% 0); transform: translate(2px, 0); }
-  40% { clip-path: inset(60% 0 10% 0); transform: translate(-1px, 0); }
-  60% { clip-path: inset(10% 0 70% 0); transform: translate(1px, 0); }
-  80% { clip-path: inset(80% 0 5% 0); transform: translate(-2px, 0); }
-}
-
-@keyframes glitch-2 {
-  0%, 100% { clip-path: inset(80% 0 0 0); transform: translate(2px, 0); }
-  20% { clip-path: inset(10% 0 60% 0); transform: translate(-2px, 0); }
-  40% { clip-path: inset(50% 0 20% 0); transform: translate(1px, 0); }
-  60% { clip-path: inset(20% 0 40% 0); transform: translate(-1px, 0); }
-  80% { clip-path: inset(0 0 80% 0); transform: translate(2px, 0); }
-}
-
-.glitch-text {
-  position: relative;
-}
-
-.glitch-text::before,
-.glitch-text::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.glitch-text::before {
+  background: #6366f1;
   color: #ffffff;
-  animation: glitch-1 3s infinite linear alternate-reverse;
-  text-shadow: 2px 0 #333;
 }
 
-.glitch-text::after {
-  color: #ffffff;
-  animation: glitch-2 2.5s infinite linear alternate-reverse;
-  text-shadow: -2px 0 #555;
+/* ===== ANIMATIONS ===== */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== TERMINAL CURSOR ===== */
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+.animate-in {
+  animation: fade-in 0.2s ease-out;
 }
 
-.terminal-cursor::after {
-  content: '_';
-  animation: blink 1s step-end infinite;
-  margin-left: 2px;
+/* ===== REACT FLOW OVERRIDES ===== */
+.react-flow__minimap {
+  border-radius: 12px !important;
 }
 
-/* ===== BORDER GLOW ===== */
-@keyframes border-glow {
-  0%, 100% { border-color: rgba(255, 255, 255, 0.1); }
-  50% { border-color: rgba(255, 255, 255, 0.3); }
+.react-flow__controls {
+  display: none;
 }
 
-.border-glow {
-  animation: border-glow 3s ease-in-out infinite;
+.react-flow__edge-path {
+  stroke-width: 2;
 }
 
-/* ===== NOISE TEXTURE ===== */
-@keyframes noise {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 100%; }
+.react-flow__handle {
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
-.noise-bg {
-  position: relative;
-}
-
-.noise-bg::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* ===== PULSE DOT ===== */
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
-  50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
-}
-
-.pulse-dot {
-  animation: pulse-dot 2s ease-in-out infinite;
+.react-flow__node:hover .react-flow__handle,
+.react-flow__node.selected .react-flow__handle {
+  opacity: 1;
 }
 
 /* ===== FORM STYLES ===== */
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }

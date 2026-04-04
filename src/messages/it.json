@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "Indietro",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "search": "Cerca",
+    "loading": "Caricamento..."
+  },
+  "dashboard": {
+    "title": "Il Mio Spazio di Lavoro",
+    "myBoards": "Le Mie Lavagne",
+    "createBoard": "Crea Nuova Lavagna",
+    "recentBoards": "Recenti",
+    "starredBoards": "Preferiti",
+    "trash": "Cestino",
+    "noBoards": "Ancora nessuna lavagna. Crea la tua prima lavagna!",
+    "noStarred": "Nessuna lavagna preferita.",
+    "noTrash": "Il cestino è vuoto.",
+    "boardCreated": "Lavagna creata il",
+    "deleteConfirm": "Spostare nel cestino?",
+    "restoreBoard": "Ripristina",
+    "deletePermanently": "Elimina definitivamente",
+    "star": "Aggiungi ai preferiti",
+    "unstar": "Rimuovi dai preferiti"
+  },
+  "canvas": {
+    "backToDashboard": "Torna alla Dashboard",
+    "toolbar": "Barra degli strumenti",
+    "addRectangle": "Rettangolo",
+    "addCircle": "Cerchio",
+    "addText": "Testo",
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci",
+    "fitView": "Adatta alla Vista",
+    "dragToAdd": "Clicca per aggiungere",
+    "untitledBoard": "Lavagna senza titolo"
+  },
+  "language": {
+    "switchLanguage": "Lingua",
+    "en": "Inglese",
+    "ru": "Russo",
+    "es": "Spagnolo",
+    "fr": "Francese",
+    "de": "Tedesco",
+    "zh": "Cinese",
+    "ja": "Giapponese",
+    "pt": "Portoghese",
+    "it": "Italiano",
+    "ko": "Coreano"
+  },
+  "user": {
+    "profile": "Profilo",
+    "settings": "Impostazioni",
+    "logout": "Esci",
+    "welcome": "Bentornato"
+  }
+}

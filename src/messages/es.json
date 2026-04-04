@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "Atrás",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "search": "Buscar",
+    "loading": "Cargando..."
+  },
+  "dashboard": {
+    "title": "Mi Espacio de Trabajo",
+    "myBoards": "Mis Tableros",
+    "createBoard": "Crear Nuevo Tablero",
+    "recentBoards": "Recientes",
+    "starredBoards": "Destacados",
+    "trash": "Papelera",
+    "noBoards": "Aún no hay tableros. ¡Crea tu primer tablero!",
+    "noStarred": "No hay tableros destacados.",
+    "noTrash": "La papelera está vacía.",
+    "boardCreated": "Tablero creado el",
+    "deleteConfirm": "¿Mover a la papelera?",
+    "restoreBoard": "Restaurar",
+    "deletePermanently": "Eliminar permanentemente",
+    "star": "Destacar",
+    "unstar": "Quitar destacado"
+  },
+  "canvas": {
+    "backToDashboard": "Volver al Panel",
+    "toolbar": "Barra de herramientas",
+    "addRectangle": "Rectángulo",
+    "addCircle": "Círculo",
+    "addText": "Texto",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "fitView": "Ajustar Vista",
+    "dragToAdd": "Clic para agregar",
+    "untitledBoard": "Tablero sin título"
+  },
+  "language": {
+    "switchLanguage": "Idioma",
+    "en": "Inglés",
+    "ru": "Ruso",
+    "es": "Español",
+    "fr": "Francés",
+    "de": "Alemán",
+    "zh": "Chino",
+    "ja": "Japonés",
+    "pt": "Portugués",
+    "it": "Italiano",
+    "ko": "Coreano"
+  },
+  "user": {
+    "profile": "Perfil",
+    "settings": "Ajustes",
+    "logout": "Cerrar Sesión",
+    "welcome": "Bienvenido de nuevo"
+  }
+}

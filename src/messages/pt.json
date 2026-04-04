@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "Voltar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "search": "Pesquisar",
+    "loading": "Carregando..."
+  },
+  "dashboard": {
+    "title": "Meu Espaço de Trabalho",
+    "myBoards": "Meus Quadros",
+    "createBoard": "Criar Novo Quadro",
+    "recentBoards": "Recentes",
+    "starredBoards": "Favoritos",
+    "trash": "Lixeira",
+    "noBoards": "Ainda não há quadros. Crie seu primeiro quadro!",
+    "noStarred": "Nenhum quadro favorito.",
+    "noTrash": "A lixeira está vazia.",
+    "boardCreated": "Quadro criado em",
+    "deleteConfirm": "Mover para a lixeira?",
+    "restoreBoard": "Restaurar",
+    "deletePermanently": "Excluir permanentemente",
+    "star": "Favoritar",
+    "unstar": "Desfavoritar"
+  },
+  "canvas": {
+    "backToDashboard": "Voltar ao Painel",
+    "toolbar": "Barra de ferramentas",
+    "addRectangle": "Retângulo",
+    "addCircle": "Círculo",
+    "addText": "Texto",
+    "zoomIn": "Aumentar Zoom",
+    "zoomOut": "Diminuir Zoom",
+    "fitView": "Ajustar Visualização",
+    "dragToAdd": "Clique para adicionar",
+    "untitledBoard": "Quadro sem título"
+  },
+  "language": {
+    "switchLanguage": "Idioma",
+    "en": "Inglês",
+    "ru": "Russo",
+    "es": "Espanhol",
+    "fr": "Francês",
+    "de": "Alemão",
+    "zh": "Chinês",
+    "ja": "Japonês",
+    "pt": "Português",
+    "it": "Italiano",
+    "ko": "Coreano"
+  },
+  "user": {
+    "profile": "Perfil",
+    "settings": "Configurações",
+    "logout": "Sair",
+    "welcome": "Bem-vindo de volta"
+  }
+}

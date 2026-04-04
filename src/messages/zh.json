@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "MiroBoard",
+    "back": "返回",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "search": "搜索",
+    "loading": "加载中..."
+  },
+  "dashboard": {
+    "title": "我的工作区",
+    "myBoards": "我的画板",
+    "createBoard": "创建新画板",
+    "recentBoards": "最近",
+    "starredBoards": "收藏",
+    "trash": "回收站",
+    "noBoards": "还没有画板。创建你的第一个画板！",
+    "noStarred": "没有收藏的画板。",
+    "noTrash": "回收站为空。",
+    "boardCreated": "画板创建于",
+    "deleteConfirm": "移到回收站？",
+    "restoreBoard": "恢复",
+    "deletePermanently": "永久删除",
+    "star": "收藏",
+    "unstar": "取消收藏"
+  },
+  "canvas": {
+    "backToDashboard": "返回主页",
+    "toolbar": "工具栏",
+    "addRectangle": "矩形",
+    "addCircle": "圆形",
+    "addText": "文本",
+    "zoomIn": "放大",
+    "zoomOut": "缩小",
+    "fitView": "适应屏幕",
+    "dragToAdd": "点击添加",
+    "untitledBoard": "未命名画板"
+  },
+  "language": {
+    "switchLanguage": "语言",
+    "en": "英语",
+    "ru": "俄语",
+    "es": "西班牙语",
+    "fr": "法语",
+    "de": "德语",
+    "zh": "中文",
+    "ja": "日语",
+    "pt": "葡萄牙语",
+    "it": "意大利语",
+    "ko": "韩语"
+  },
+  "user": {
+    "profile": "个人资料",
+    "settings": "设置",
+    "logout": "退出登录",
+    "welcome": "欢迎回来"
+  }
+}
