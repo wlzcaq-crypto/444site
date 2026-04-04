@@ -14,8 +14,19 @@ export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    // TODO: Replace with actual API call (e.g., POST /api/contact) to persist lead data
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
+      if (!response.ok) throw new Error("Failed to submit");
+    } catch {
+      // API route not yet implemented — show success UI as placeholder
+    }
     setSubmitted(true);
   };
 

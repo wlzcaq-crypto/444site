@@ -3,7 +3,7 @@
 @theme inline {
   --color-background: #000000;
   --color-foreground: #ffffff;
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-mono);
   --font-mono: var(--font-geist-mono);
 }
 
