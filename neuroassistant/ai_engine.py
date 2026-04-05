@@ -6,6 +6,7 @@ Implements key rotation for load balancing across multiple API keys.
 
 import asyncio
 import base64
+import json
 import logging
 from typing import Optional
 
@@ -219,8 +220,6 @@ class AIEngine:
             )
             text = response.text.strip()
             # Parse JSON from response
-            import json
-            # Try to extract JSON from the response
             if "{" in text:
                 json_str = text[text.index("{"):text.rindex("}") + 1]
                 return json.loads(json_str)

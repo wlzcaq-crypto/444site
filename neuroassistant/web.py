@@ -4,6 +4,7 @@ aiohttp-based web server with Jinja2 templates for the control panel.
 Provides REST API endpoints and serves the dashboard UI.
 """
 
+import hashlib
 import logging
 from typing import Optional
 
@@ -240,9 +241,13 @@ class WebDashboard:
                     {"error": "Channel not found"}, status=404
                 )
         else:
-            # Add with placeholder ID if not connected
+            # Add with deterministic placeholder ID if not connected
+            # Use hashlib (deterministic across sessions) instead of hash()
+            stable_hash = int(
+                hashlib.sha256(username.encode()).hexdigest(), 16
+            ) % (10**10)
             added = await self.db.add_channel(
-                channel_id=hash(username) % (10**10),
+                channel_id=stable_hash,
                 username=username,
                 title=username,
                 source="manual",

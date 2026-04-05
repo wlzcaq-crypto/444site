@@ -7,6 +7,7 @@ and auto-dialogue features.
 import asyncio
 import logging
 import random
+from collections import OrderedDict
 from typing import Optional
 
 from pyrogram import Client, filters
@@ -46,7 +47,9 @@ class TelegramBot:
         # Track our own user ID so we can detect replies to our comments
         self.my_user_id: Optional[int] = None
         # Store comment message IDs to detect replies: {(chat_id, msg_id): original_post_text}
-        self._our_comments: dict = {}
+        # Uses OrderedDict with max size to prevent unbounded memory growth
+        self._our_comments: OrderedDict = OrderedDict()
+        self._max_tracked_comments = 1000
 
     async def start(self):
         """Initialize and start the Pyrogram client."""
@@ -181,8 +184,10 @@ class TelegramBot:
                 content=comment_text,
             )
 
-            # Track our comment for auto-dialogue
+            # Track our comment for auto-dialogue (with eviction)
             self._our_comments[(message.chat.id, sent_message.id)] = post_text
+            if len(self._our_comments) > self._max_tracked_comments:
+                self._our_comments.popitem(last=False)
 
             logger.info(
                 f"Comment sent in {message.chat.title}: {comment_text[:60]}..."
